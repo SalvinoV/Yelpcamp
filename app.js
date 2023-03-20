@@ -64,7 +64,7 @@ store.on("error", function (e) {
 });
 
 const sessionConfig = {
-	store: store,
+	store: store, //MongoStore.create({ mongoUrl: dbUrl }),
 	name: "session",
 	secret: "thisshouldbeabettersecret!",
 	resave: false,
